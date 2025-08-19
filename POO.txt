@@ -1,0 +1,4 @@
+Que es POO? Es un paradigma de la programación. Modelo básico de diseño y desarrollo de programas
+Que es un objeto? Básicamente, todo lo que nos rodea con sus respectivas características
+Clase: Misma clase pueden tener mismos atributos pero diferentes caracteristicas
+POO: Reutilizamos código, tendremos mas complejos que facilita el mantenimiento
