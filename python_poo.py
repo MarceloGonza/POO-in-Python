@@ -40,7 +40,7 @@ class Matematica:
     def suma(self):
         self.n1 = 2
         self.n2 = 3
-        
+
 s = Matematica()
 s.suma()
 print(s.n1 + s.n2)
@@ -63,6 +63,23 @@ class Calculadora:
         self.resta = n1 - n2
         self.division = n1 / n2
         self.multiplicacion = n1 * n2
-        
+
 operacion = Calculadora(2,3)
 print(operacion.suma)
+
+# FUNCIONES CON ATRIBUTOS
+
+class Persona:
+    edad = 27
+    nombre = "Ernesto"
+    pais = "Brasil"
+
+medico = Persona()
+# print('la edad es: ', medico.edad)
+# print('la edad es: ', getattr(medico, 'edad')) #mismo resultado, obtengo el valor de forma directa
+
+print('el medico tiene edad?', hasattr(medico, 'edad')) # retorna True
+print('Antes era: ', medico.nombre)
+setattr(medico, 'nombre', 'Marcos') #se llama en comillas para que acceda al valor declarado
+print('Ahora se llama: ', medico.nombre)
+delattr(Persona, 'paiss') #elimina el atributo
