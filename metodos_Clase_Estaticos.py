@@ -37,7 +37,7 @@ class Disco:
         self.materiales = materiales
         self.volumen = volumen
     def __repr__(self):
-        return (f'Rutina({self.materiales}, 'f'{self.volumen})')
+        return (f'materiales({self.materiales}, 'f'{self.volumen})')
     def area(self):
         return self.volumen_area(self.volumen)
     @staticmethod #no es necesario self o cls
